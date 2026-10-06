@@ -28,6 +28,15 @@ const RouterWrapper = () => {
 	return <RouterProvider router={router} />
 }
 
+// Register service worker for PWA support
+if ('serviceWorker' in navigator) {
+	window.addEventListener('load', () => {
+		navigator.serviceWorker.register('/sw.js').catch(() => {
+			// Service worker registration failed — app still works
+		})
+	})
+}
+
 root.render(
 	<React.StrictMode>
 		<ReduxProvider store={store}>
