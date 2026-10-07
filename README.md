@@ -87,3 +87,25 @@ If you encounter trouble, reach out to the developer through the Discord link yo
 
 > A database backup is taken every 6 hours
 
+## Features
+
+- **PWA Support**: Installable as a Progressive Web App with offline caching
+- **Dark Mode**: Automatic dark/light mode based on system preference
+- **Tests**: Basic test suite included
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Run tests
+npm test
+
+# Build for production
+npm run build
+```
+
+## License
+
+See [LICENSE](LICENSE) for details.
